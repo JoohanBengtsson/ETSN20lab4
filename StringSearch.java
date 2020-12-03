@@ -9,6 +9,7 @@ public class StringSearch {
 	public static void main(String[] args) throws FileNotFoundException {
 		StringSearch maja = new StringSearch();
 		maja.searchWordLines("berattelse.txt", "mattat");
+		//hello
 	}
 
 	public void searchWordLines(String fileName, String word) throws FileNotFoundException {
@@ -17,17 +18,17 @@ public class StringSearch {
 		Scanner	scan = new Scanner(new File(fileName));
 		
 		String[] words = null;
-		String s;
+		String string;
 		String search = word;
 		ArrayList<String> listOfRows = new ArrayList<String>();
 
 		while (scan.hasNextLine()) {
-			s = scan.nextLine();
-			words = s.split(" ");
+			string = scan.nextLine();
+			words = string.split(" ");
 
 			for (String tempWord : words) {
 				if (tempWord.equals(search)) {
-					listOfRows.add(s);
+					listOfRows.add(string);
 					break;
 				}
 			}
