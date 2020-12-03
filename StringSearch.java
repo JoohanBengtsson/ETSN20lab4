@@ -9,6 +9,7 @@ public class StringSearch {
 	public static void main(String[] args) throws FileNotFoundException {
 		StringSearch maja = new StringSearch();
 		maja.searchWordLines("berattelse.txt", "mattat");
+		//hello
 	}
 
 	public void searchWordLines(String fileName, String word) throws FileNotFoundException {
